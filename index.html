@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>My weather application</title>
+  </head>
+  <body>
+    <div class="SheCodes-logo">
+      <a href="https://www.shecodes.io/" target="_blank" rel="noopener noreferrer">
+        <img src="images/shecodes logo.png" alt="SheCodes logo" width=300>
+      </a>
+     </div>
+ <div class="weather-app">
+    <header>
+      <form id="enter-form">
+        <input
+          type="search"
+          placeholder="Enter a city.."
+          required
+          class="city-input"
+          id="search-city-input"
+        />
+        <input type="submit" value="Search" class="search-button" />
+      </form>
+    </header>
+    <main>
+      <div class="current-weather">
+        <div>
+          <h1>Fort Mill</h1>
+          <p class="description">
+            <span id="today-weather">Saturday 15:32</span>, moderate rain <br />
+            Humidity: <span class="weather-color">87%</span>, Wind: <span class="weather-color">7.2km/h</span>
+          </p>
+        </div>
+        <div class="temperature">
+          <span class="today-temperature-emoji">☀️</span>
+          <span class="today-temperature-number" id="temp-number">57</span>
+          <span class="today-temperature-degree">°F</span>
+        </div>
+      </div>
+           </main>
+           <footer>
+      <p>
+        This project was coded by
+        <a href="www.linkedin.com/in/jaida-thomas-b2b737206" target="_blank">
+          <a href="" target="_blank">Jaida Thomas</a> and is
+        <a href="www.linkedin.com/in/jaida-thomas-b2b737206" target="_blank">
+          on LinkedIn</a
+        >
+        and
+        <a href="#" target="_blank">hosted on Netlify</a>
+      </p>
+    </footer>
+  </div>
+  <script src="src/index.js"></script>
+  </body>
+</html>
